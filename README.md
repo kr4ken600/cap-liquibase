@@ -1,11 +1,11 @@
 # Proyecto de prueba - Liquibase
 
 ### Para el punto 3, 5, 8:
-Utilizar la configuracion: **changeLogFile=./changesets/db.changelog-master.xml** 
+Utilizar la configuracion: **changeLogFile=./changesets/dbtest.changelog-master.xml** 
 
 Y la base de datos **jdbc:mysql://localhost:3306/cap_liquibase_test**
 ### Para el punto 4, 6, 7:
-Utilizar la configuracion: **changeLogFile=./changesets/dbtest.changelog-master.xml**
+Utilizar la configuracion: **changeLogFile=./changesets/db.changelog-master.xml**
 
 Y la base de datos **jdbc:mysql://localhost:3306/cap_liquibase**
 
