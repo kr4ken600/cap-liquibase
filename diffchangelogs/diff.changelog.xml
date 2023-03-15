@@ -1,0 +1,44 @@
+<?xml version="1.1" encoding="UTF-8" standalone="no"?>
+<databaseChangeLog xmlns="http://www.liquibase.org/xml/ns/dbchangelog" xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext" xmlns:pro="http://www.liquibase.org/xml/ns/pro" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd http://www.liquibase.org/xml/ns/pro http://www.liquibase.org/xml/ns/pro/liquibase-pro-latest.xsd http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd">
+    <changeSet author="Yonatan Ortiz (generated)" id="1678808961955-1">
+        <createTable tableName="alumnos">
+            <column autoIncrement="true" name="matricula" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="nombre" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="apelllidoPaterno" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="apelllidoMaterno" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="edad" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="direccion" type="VARCHAR(100)">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+    <changeSet author="Yonatan Ortiz (generated)" id="1678808961955-2">
+        <createTable tableName="materias">
+            <column autoIncrement="true" name="idMateria" type="INT">
+                <constraints nullable="false" primaryKey="true"/>
+            </column>
+            <column name="nombre" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="description" type="VARCHAR(50)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="creditos" type="INT">
+                <constraints nullable="false"/>
+            </column>
+            <column name="horas" type="INT">
+                <constraints nullable="false"/>
+            </column>
+        </createTable>
+    </changeSet>
+</databaseChangeLog>
